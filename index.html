@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSL-Flex</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jsl-flex.css">
+
+    <style>
+	
+
+
+
+/* Demo styles */
+html {
+    font: 1.1em "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: #222
+}
+
+.row {
+	border: solid 2px #8fb6a9;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.row.m-top {
+margin-top: 0.5rem;
+}
+
+.col {
+    background: #afd6c9;
+    padding: 0.5rem;
+}
+
+.col:nth-of-type(2n) {
+    background: #95bbcb;
+}
+	
+	</style>
+
+
+</head>
+
+<body>
+
+<h1>JSL-Flex</h1>
+
+<p>Extremely lightweight (233 bytes minified and gzip) responsive mobile first grid system. Works in all modern browsers including IE 11.</p>
+
+<p>
+Grids are specified in steps of 10 percent. Resize the browser window to see how they automatically adjust to different screen sizes.
+</p>
+
+<div class="row">
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-30"> col-30 </div>
+	<div class="col col-50"> col-50 </div>
+</div>
+
+<p>Screens &gt; 70em (Desktop Mode): 100% = one line<br/>Screens &gt; 45em (Tablet Mode): 100% = two lines<br/>smaller Screens (Mobile Mode): every col in separate line</p>
+
+<div class="row">
+	<div class="col col-70"> 70 % </div>
+	<div class="col col-10"> 10 % </div>
+	<div class="col col-20"> 20 % </div>
+</div>
+
+
+<p>Restrict Size (max width 75%)</p>
+
+<div class="row" style="width: 75%">
+	<div class="col col-30"> 30 % </div>
+	<div class="col col-30"> 30 % </div>
+	<div class="col col-30"> 30 % </div>
+</div>
+
+
+<p>
+Different Sizes
+</p>
+
+<div class="row m-top">
+	<div class="col col-100"> col-100 </div>
+</div>
+
+
+<div class="row m-top">
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-90"> col-90 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-80"> col-80 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-30"> col-30 </div>
+	<div class="col col-70"> col-70 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-40"> col-40 </div>
+	<div class="col col-60"> col-60 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-50"> col-50 </div>
+	<div class="col col-50"> col-50 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-70"> col-70 </div>
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-10"> col-10 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-30"> col-30 </div>
+	<div class="col col-40"> col-40 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-20"> col-20 </div>
+	<div class="col col-20"> col-20 </div>
+</div>
+
+<div class="row m-top">
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+	<div class="col col-10"> col-10 </div>
+</div>
+
+
+<p>
+Different Content Height
+</p>
+
+<div class="row">
+	<div class="col col-20"> 20 % </div>
+	<div class="col col-30"> 30 % </div>
+	<div class="col col-50"> <p>Content</p><p>with</p><p>several lines of text</p></div>
+</div>
+
+
+<p>
+Nested Grids
+</p>
+
+<div class="row">
+	<div class="col col-20"> 20 % </div>
+	<div class="col col-30"> 30 % </div>
+	<div class="col col-50">
+<p>	50 % </p>
+<div class="row">
+	<div class="col col-40"> 40% (of 50%) </div>
+	<div class="col col-20"> 20% (of 50%) </div>
+	<div class="col col-40"> 40% (of 50%) </div>
+	</div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+</body>
+</html>
